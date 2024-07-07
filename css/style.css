@@ -321,6 +321,7 @@ span{
     justify-content: center;
     align-items: center;
     visibility: hidden;
+    z-index: 2000;
 }
 .titleModal{
     display: flex;
