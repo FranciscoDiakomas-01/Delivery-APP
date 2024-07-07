@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Online</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.mjs"></script>
+</head>
+<body>
+    <div id="modalBox">
+        <div id="modal">
+            <h2>Seu Carrinho</h2>
+            <div class="carrinho" id="carrinho">
+    
+            </div>
+            <strong>Total : <span id="totalValor">00</span></strong>
+            <strong>Total Produto : <span id="totalProdutos">0</span></strong>
+            <form action="">
+                <label for="">Endereço de Entrega</label>
+                <input type="text" placeholder="Entre com o seu Endereço" id="Endereço">
+                <p id="validator">Indereço inválido!</p>
+                <div class="spinner"></div>
+    
+            </form>
+            <div class="footerModal">
+                <button id="FecharModal">Fechar</button>
+                <button id="Finalizar"><a>Finalizar</a></button>
+            </div>
+        </div>
+    
+    </div>
+    <header>
+        <nav>
+            <article class="logo">
+                <img src="../icon/burger.png" alt="">
+                <span>FrancisBuguer</span>
+                
+            </article>
+            <article id="links">
+                <ul>
+                    <li><a href="#Home">Inicial</a></li>
+                    <li><a href="#Categorias">Produtos</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="infoCarinho">
+                    <span id="ElementosSelecionados">0</span>
+                    <button id="verCarrinho"><img src="../icon/icons8-add-shopping-cart-48.png" alt=""></button>
+                </div>
+                
+                </article>
+            </article>
+            
+
+        </nav>
+    </header>
+    
+    
+    <main id="Home">
+
+        <article>
+            <img src="../image/a2.jpg" alt="logo">
+            <h1>Hamburgaria & Pizzaria</h1>
+            <h3>Mutamba Rua 12, Campo Flávio</h3>
+            <div class="hr">
+                <p>
+                    Seg à Dom - 
+                    <strong>12:00 às 22:00</strong>
+                </p>
+            </div>
+        </article>
+    </main>
+
+
+    <section id="Categorias">
+
+        <h1>Categoria dos Prodtudos</h1>
+        <nav>
+            <div class="ItensNavitagion">
+                <img src="../icon/icons8-pizza-60.png" alt="" id="pizza" class="active">
+                <span>Pizza</span>
+            </div>
+            <div class="ItensNavitagion">
+                <img src="../icon/burger.png" alt="" id="hamburguer">
+                <span>Hamburger</span>
+            </div>
+            <div class="ItensNavitagion">
+                <img src="../icon/icons8-french-fries-48.png" alt="" id="batata">
+                <span>Batata</span>
+            </div>
+            <div class="ItensNavitagion">
+                <img src="../icon/icons8-cola-64.png" alt="" id="refri">
+                <span>Refrigerante</span>
+            </div>
+
+        </nav>
+
+        <article id="PizzaViewer">
+            <div class="product">
+                
+                
+                <img src="../image/c1.jpg" alt="" id="picture">
+                <h4>Pizza Familiar</h4>
+                <strong>
+                    5.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            <div class="product">
+            
+            
+                <img src="../image/c5.jpg" alt="" id="picture">
+                <h4>Pizza De Queijo</h4>
+                <strong>
+                    10.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+            
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            <div class="product">
+            
+            
+                <img src="../image/c7.jpg" alt="" id="picture">
+                <h4>Pizza Italiana</h4>
+                <strong>
+                    7.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+            
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            <div class="product">
+            
+            
+                <img src="../image/c3.jpg" alt="" id="picture">
+                <h4>Pizza Normal</h4>
+                <strong>
+                    5.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+            
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            
+        </article>
+        <article id="HamburerViewer">
+                    <div class="product">
+                
+                
+                        <img src="../image/a2.jpg" alt="" id="picture">
+                        <h4>Hamburger de Framgo</h4>
+                        <strong>
+                            3.000 Kz
+                        </strong>
+                        <div>
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                
+                        </div>
+                        <button class="ComprarBTN">Comprar</button>
+                    </div>
+                    <div class="product">
+                
+                
+                        <img src="../image/a5.jpg" alt="" id="picture">
+                        <h4>Hamburger De Queijo</h4>
+                        <strong>
+                            6.000 Kz
+                        </strong>
+                        <div>
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                
+                        </div>
+                        <button class="ComprarBTN">Comprar</button>
+                    </div>
+                    <div class="product">
+                
+                
+                        <img src="../image/a3.jpg" alt="" id="picture">
+                        <h4>Hamburger Normal</h4>
+                        <strong>
+                            7.000 Kz
+                        </strong>
+                        <div>
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                            <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                
+                        </div>
+                        <button class="ComprarBTN">Comprar</button>
+                    </div>
+                
+        </article>
+        <article id="BatataViewer">
+            <div class="product">
+        
+        
+                <img src="../image/e1.jpg" alt="" id="picture">
+                <h4>Batas Fritas Normal</h4>
+                <strong>
+                    1.500 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+        
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            <div class="product">
+        
+        
+                <img src="../image/e3.jpg" alt="" id="picture">
+                <h4>Batatas Fritas</h4>
+                <strong>
+                    1.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+        
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+        
+        </article>
+        <article id="RefriViewer">
+            <div class="product">
+        
+        
+                <img src="../image/b1.jpg" alt="" id="picture">
+                <h4>Coca Cola</h4>
+                <strong>
+                    1.500 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+        
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            <div class="product">
+        
+        
+                <img src="../image/b6.jpg" alt="" id="picture">
+                <h4>Fanta</h4>
+                <strong>
+                    1.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+        
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+            <div class="product">
+            
+            
+                <img src="../image/b5.jpg" alt="" id="picture">
+                <h4>Sprite</h4>
+                <strong>
+                    1.000 Kz
+                </strong>
+                <div>
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+                    <img src="../icon/icons8-star-filled-48.png" alt="" id="Stars">
+            
+                </div>
+                <button class="ComprarBTN">Comprar</button>
+            </div>
+        
+        </article>
+        
+        
+
+    </section>
+    <section id="cardapio">
+        <h1>Conheça o Nosso Cardápio</h1>
+
+        <div>
+            <h3>Hamburguers</h3>
+            <article>
+                <div class="card">
+                    <div>
+                        <img src="../image/a2.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Hamburger de Frango</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+                        </div>
+            
+                        <div class="priceCard">
+                            <strong>
+                                2.000 KZ
+                            </strong>
+                            <button data-name="Hamburger de Frango" data-price="2000" data-image="../image/a2.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div>
+                        <img src="../image/a3.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Hamburguer de Queijo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+                        </div>
+            
+                        <div class="priceCard">
+                            <strong>
+                                1.800 KZ
+                            </strong>
+                            <button data-name="Hamburguer de Queijo" data-price="1800" data-image="../image/a3.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div>
+                        <img src="../image/a5.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Hamburguer Normal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+                        </div>
+            
+                        <div class="priceCard">
+                            <strong>
+                                1.400 KZ
+                            </strong>
+                            <button data-name="Hamburguer Norma" data-price="1400" data-image="../image/a5.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>   
+        </div>
+
+
+        <div>
+            <h3>Refrigerantes</h3>
+            <article>
+                    <div class="card">
+                        <div>
+                            <img src="../image/b1.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <div>
+                                <h3>Coca Cola</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    
+                            </div>
+                    
+                            <div class="priceCard">
+                                <strong>
+                                    1.300 KZ
+                                </strong>
+                                <button data-name="Coca Cola" data-price="1300" data-image="../image/b1.jpg">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="../image/b6.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <div>
+                                <h3>Fanta Em Lata</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    
+                            </div>
+                    
+                            <div class="priceCard">
+                                <strong>
+                                    1.200 KZ
+                                </strong>
+                                <button data-name="Fanta Em Lata" data-price="1200" data-image="../image/b6.jpg">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="../image/b5.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <div>
+                                <h3>Sprite em Lata</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    
+                            </div>
+                    
+                            <div class="priceCard">
+                                <strong>
+                                    1.100 KZ
+                                </strong>
+                                <button data-name="Sprite em Lata" data-price="1100" data-image="../image/b5.jpg">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </article>       
+        </div>
+
+        <div>
+            <h3>Pizzas</h3>
+            <article>
+                <div class="card">
+                    <div>
+                        <img src="../image/c3.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Pizza Normal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                        </div>
+                
+                        <div class="priceCard">
+                            <strong>
+                                5.000 KZ
+                            </strong>
+                            <button data-name="Pizza Normal" data-price="5000" data-image="../image/c3.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../image/c5.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Pizza De Queijo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                        </div>
+                
+                        <div class="priceCard">
+                            <strong>
+                                10.000 KZ
+                            </strong>
+                            <button data-name="Pizza De Queijo" data-price="10000" data-image="../image/c5.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../image/c7.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Pizza Italiana</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                        </div>
+                
+                        <div class="priceCard">
+                            <strong>
+                                7.000 KZ
+                            </strong>
+                            <button data-name="Pizza Italiana" data-price="7000" data-image="../image/c7.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="../image/c7.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Pizza Familiar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                        </div>
+                
+                        <div class="priceCard">
+                            <strong>
+                                5.000 KZ
+                            </strong>
+                            <button data-name="Pizza Familiar" data-price="5000" data-image="../image/c7.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+        <div>
+            <h3>Batatas</h3>
+            <article>
+
+                <div class="card">
+                    <div>
+                        <img src="../image/e1.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Batatas Fritas Normal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                        </div>
+                
+                        <div class="priceCard">
+                            <strong>
+                                1.500 KZ
+                            </strong>
+                            <button data-name="Pizza Familiar" data-price="1500" data-image="../image/e1.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="../image/e3.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <h3>Batatas fritas</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                        </div>
+                
+                        <div class="priceCard">
+                            <strong>
+                                1.000 KZ
+                            </strong>
+                            <button data-name="Pizza Familiar" data-price="1000" data-image="../image/e3.jpg">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+    </section>
+
+
+    <section id="blog">
+        <div class="blogContent">
+            <div>
+                <div>
+                    <video src="../video/Cardapio.mp4" poster="../image/wall.jpg" ></video>
+
+                    <div id="Videoontrols">
+                        <div>
+                            <div class="time">
+                                <div class="timePlayed"></div>
+                            </div>
+                        </div>
+                        <div id="Contollers">
+                            <h5 class="VideoDescription">
+                                Aprenda Como Fazer Ovós da Forma Certa
+                            </h5>
+                            <div class="IconsBTN">
+                                <img src="../icon/icons8-rewind-button-round-48.png" loading="lazy">
+                                <img src="../icon/icons8-circled-play-48.png" id="PlayVideo" loading="lazy">
+                                <img src="../icon/icons8-fast-forward-round-48.png" loading="lazy">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="Coment">
+                <div>
+                    <h2 id="TituloComentario">Sugestões</h2>
+                    <div class="cardComentarios">
+                        <div class="comentario">
+                            <div class="AutorCoentario">
+                                <img src="../image/d3.jpg" alt="AutorComentário" loading="lazy">
+                                <h4>Francisco Diakomas</h4>
+                            </div>
+                            
+                            <span class="coment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus hic nisi, saepe impedit.
+                            </span>
+                        </div>
+                        <div class="comentario">
+                            <div class="AutorCoentario">
+                                <img src="../image/d3.jpg" alt="AutorComentário" loading="lazy" >
+                                <h4>Francisco Diakomas</h4>
+                            </div>
+                        
+                            <span class="coment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus hic nisi, saepe impedit.
+                            </span>
+                        </div>
+                        <div class="comentario">
+                            <div class="AutorCoentario">
+                                <img src="../image/d3.jpg" alt="AutorComentário" loading="lazy">
+                                <h4>Francisco Diakomas</h4>
+                            </div>
+                        
+                            <span class="coment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus hic nisi, saepe impedit.
+                            </span>
+                        </div>
+                        <div class="comentario">
+                            <div class="AutorCoentario">
+                                <img src="../image/d3.jpg" alt="AutorComentário" loading="lazy">
+                                <h4>Francisco Diakomas</h4>
+                            </div>
+                        
+                            <span class="coment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus hic nisi, saepe impedit.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <section id="contacto">
+        <h1>Maneiras de Pagamento</h1>
+        <div class="Manieras">
+            <div class="maneira">
+                <img src="../icon/icons8-dollar-coin-48.png" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis iste impedit.</p>
+            </div>
+            <div class="maneira">
+                <img src="../icon/truck.png" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis iste impedit.</p>
+            </div>
+            <div class="maneira">
+                <img src="../icon/icons8-card-48.png" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis iste impedit.</p>
+            </div>
+            <div class="maneira">
+                <img src="../icon/icons8-dollar-bitcoin-exchange-48.png" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis iste impedit.</p>
+            </div>
+
+        </div>
+
+        <h1>Entra em contacto Connosco</h1>
+        <form action="">
+
+            <div>
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Sobrenome">
+
+            </div>
+            <div>
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Telefone">
+            
+            </div>
+            <textarea name="" id="" placeholder="Comentário">
+
+            </textarea>
+            <button>Enviar</button>
+        </form>
+
+
+    </section>
+
+    <footer>
+        <div>
+            <div class="logo">
+                <img src="../icon/burger.png" alt="">
+                <span>FrancisBuguer</span>
+            </div>
+            <ul>
+                <li><a href="#Home">Inicial</a></li>
+                <li><a href="#Categorias">Produtos</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="redesSOcial">
+                <img src="../icon/icons8-facebook-48.png" alt="" loading="lazy">
+                <img src="../icon/icons8-whatsapp-48.png" alt="" loading="lazy">
+                <img src="../icon/icons8-tiktok-48.png" alt="" loading="lazy">
+                <img src="../icon/icons8-linkedin-48.png" alt="" loading="lazy">
+                <img src="../icon/icons8-youtube-48.png" alt="" loading="lazy">
+            </div>
+        </div>
+       <p>&copy Copyrigth FranciscoDiakomas 2024 Todos Direitos Reservados</p>
+    </footer>
+
+</body>
+</html>

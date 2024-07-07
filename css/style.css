@@ -1,0 +1,657 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(185, 184, 184);
+
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 153, 1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 8px;
+}
+:root{
+    --green : rgb(28, 161, 28);
+}
+
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 20000;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header nav button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+#ElementosSelecionados{
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 14pt;
+    text-align: center;
+    text-align: center;
+}
+#verCarrinho{
+    margin-right: 25px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 5px;
+    font-size: 14pt;
+}
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav li{
+    display: inline;
+}
+.logo img,
+nav img{
+    height: 40px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../image/wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+main img{
+    height: 200px;
+    width : 200px;
+    border-radius: 50%;
+}
+main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hr{
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#Categorias{
+    padding-top: 150px;
+    gap: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.807),rgba(0, 0, 0, 0.779)), url(../image/Bread\ Omelette\ Sandwich.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#Categorias nav{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 242, 242);
+    padding: 10px 20px;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+#Categorias nav img{
+    padding: 8px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform ease .5s;
+    cursor: pointer;
+}
+
+.ItensNavitagion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.ItensNavitagion span{
+    display: none;
+    transition: all 1s linear;
+}
+#Categorias nav img:hover{
+    transform: scale(1.070) translateY(-10px);
+}
+#Categorias nav img.active{
+    border: solid 3px red;
+    margin-top: -40px;
+}
+#Categorias nav img.active ~ span{
+    display: flex;
+}
+#Categorias article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 50px;
+    gap: 20px;
+    transition: all 1s linear;
+}
+.ComprarBTN{
+    padding: 8px;
+    border: none;
+    background-color: green;
+    color: white;
+    width: 90%;
+    border-radius: 8px;
+}
+#Categorias h1{
+    color: white;
+}
+#Categorias strong{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13pt;
+}
+
+#picture{
+    height: 170px;
+    border-radius: 50%;
+    width: 170px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 10px;
+    height: 350px;
+}
+#Stars{
+    height: 25px;
+}
+section{
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(234, 232, 232);
+    gap: 50px;
+    padding: 50px;
+}
+#cardapio{
+    padding-top: 150px;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#cardapio article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:30px;
+    padding: 10px;
+    
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+
+}
+button{
+    cursor: pointer;
+    transition:  transform .5s linear;
+}
+button:active{
+    transform: translateY(5px);
+}
+.card img{
+    width: 150px;
+    height:150px;
+    transition: transform .5s ease;
+    
+}
+
+.card img:hover{
+    transform: skew(5deg , 0deg) scale(1.1);
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.priceCard{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.priceCard button{
+    padding: 10px;
+    border: transparent;
+    color: white;
+    background-color: black;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 12pt;
+    transition: all .5s ease;
+}
+.priceCard button:hover {
+   background-color: rgba(0, 0, 0, 0.725);
+}
+.priceCard strong{
+    font-size: 13pt;
+}
+span{
+    font-weight: normal;
+}
+
+#modalBox{
+    position: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.titleModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modalBox img{
+    height: 100px;
+}
+#modalBox h2{
+    text-align: center;
+}
+#modal{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 600px;
+    background-color: white;
+    justify-content: center;
+}
+.carrinho{
+    display : fle;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+    margin:  20px 0px;
+}
+.car{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.cardBTNs{
+    display: flex;
+    height : 100%;
+    justify-content:center;
+    align-items: center ;
+    gap: 10px;
+    padding-top: 80px;
+}
+.car button:first-of-type{
+    background-color: rgb(255, 1, 1);
+    padding: 8px;
+    color : white;
+    border: transparent;
+    border-radius: 2px;
+}
+.car button:last-of-type {
+    background-color: rgb(255, 153, 1);
+    padding: 8px;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0px;
+}
+input{
+    padding: 5px;
+    font-size: 13pt;
+    height: 40px; 
+    outline: none;
+}
+form p{
+    color: red;
+    display: none;
+}
+.spinner{
+    display: none;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: dotted 8px rgb(255, 153, 1);
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 5px;
+    border-bottom: transparent 6px solid;
+    animation: girar 1s infinite linear;
+    transition: transform .5s linear;
+}
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+label{
+    font-size: 15px;
+    font-weight: 600;
+}
+.footerModal{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footerModal button{
+    padding: 8px;
+    border: transparent;
+    width: 100px;
+}
+.footerModal button:first-of-type{
+    background-color: red;
+    color: white;
+}
+.footerModal button:last-of-type {
+    background-color: rgba(15, 184, 15, 0.896);
+    color: white;
+}
+
+
+
+/*Bog*/
+video{
+    width: 800px;
+    object-fit: cover;
+    height: 400px;
+    cursor: pointer;
+}
+#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(251, 244, 244);
+}
+
+.IconsBTN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.IconsBTN img{
+    height: 30px;
+    cursor: pointer;
+   
+}
+.blogContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+
+#Videoontrols{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin-top: -10px;
+    font-size: 14pt;
+    z-index: 22;
+    gap: 20px;
+    overflow: hidden;
+}
+.time{
+    display: flex;
+    height: 10px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.timePlayed{
+    position: absolute;
+    background-color: red;
+    width: 0;
+    height: 100%;
+}
+#Videoontrols #Contollers{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#TituloComentario{
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+}
+.Coment{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardComentarios{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 234, 234);
+    padding: 20px;
+    height: 500px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    gap: 15px;
+}
+.cardComentarios img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.comentario{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+}
+.AutorCoentario{
+    display: flex;
+    width: 100%;
+    gap: 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+.coment{
+    text-align: start;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+
+
+#contacto{
+    min-height: 100vh;
+    padding-top: 150px;
+}
+.Manieras{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.maneira{
+    height: 180px;
+    width: 300px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.maneira img{
+    height: 50px;
+}
+#contacto form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+#contacto form div{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+
+}
+#contacto input{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 4px ;
+    border: solid 1px rgb(255, 153, 1);
+    outline: none;
+    font-size: 13pt;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    border: solid 1px rgb(255, 153, 1);
+    background-color: transparent;
+    outline: none;
+    font-size: 13pt;
+    padding: 10px;
+}
+#contacto button{
+    height: 40px;
+    font-size: 13pt;
+    border: none;
+    background-color:  rgb(255, 153, 1);
+    color: white;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+}
+footer div{
+    width : 100%;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesSOcial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.redesSOcial img{
+    height: 40px;
+}
