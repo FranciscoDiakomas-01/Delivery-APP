@@ -4,10 +4,10 @@ import { RenderizarProdutos } from "./RenderizarProduto.mjs";
 import { AdicionarIten } from "./AddProduto.mjs";
 import { FinalizarPedido } from "./FinalizarPedido.mjs";
 import { BTN } from "./comprarBTN.mjs";
-import { Play } from "./VideoBlog.mjs";
+import { MenuBuguer } from "./showMenuBuguer.mjs";
 
-//player dos Videos
-Play()
+
+MenuBuguer()
 
 //botões que vão fazer scoll
 BTN()

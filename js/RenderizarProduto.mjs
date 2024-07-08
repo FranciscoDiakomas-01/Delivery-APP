@@ -59,7 +59,7 @@ export function RenderizarProdutos(Produto) {
                         <img src="${produto.ImagemURL}" alt="">
                         <h4>${produto.Nome}</h4>
                         <span>Preço ${Number(produto.Preço).toFixed(2)} KZ</span>
-                        <span>(Quantidade <span>${produto.Quantidade}</span>)</span>
+                        <span>(Qtd <span>${produto.Quantidade}</span>)</span>
         
         `
         
